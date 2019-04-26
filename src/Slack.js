@@ -43,7 +43,7 @@ class Slack {
           fields: [
             {
               title: 'Provider',
-              value: `${notification.providerName}`,
+              value: `${notification.stackName}`,
               short: 'true',
             },
             {
