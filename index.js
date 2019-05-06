@@ -72,12 +72,6 @@ class ServerlessPluginNotification {
       const slackHandler = new Slack(this.custom().slack);
       promises.push(slackHandler.notify(notification, logger));
     }
-
-    if (this.custom().webhook) {
-      const webhookHandler = new Webhook(this.custom().webhook);
-      promises.push(webhookHandler.notify(notification, logger));
-    }
-
     return Promise.all(promises);
   }
 }
