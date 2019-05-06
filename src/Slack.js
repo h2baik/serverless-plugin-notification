@@ -42,8 +42,8 @@ class Slack {
           mrkdwn: true,
           fields: [
             {
-              title: 'Provider',
-              value: `${notification.stackName}`,
+              title: 'Service',
+              value: `${notification.service}`,
               short: 'true',
             },
             {

@@ -54,6 +54,7 @@ class ServerlessPluginNotification {
       deployer,
       invocationId: this.invocationId,
       message,
+      service: this.service,
       providerName: this.provider.name,
       stage: this.options.stage || this.provider.stage,
       region: this.options.region || this.provider.region,
